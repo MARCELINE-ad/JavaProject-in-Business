@@ -1,0 +1,7 @@
+digraph C {
+graph [rankdir=TB, bgcolor="white", pad=0.4, dpi=150, size="8,6"];
+node [shape=record, style="filled", fontname="Times New Roman", fontsize=14, color="#2F5597", fillcolor="#F7FBFF", margin="0.2,0.15"];
+a [label="{TimesheetAnalyzer||+ parseHours(String): int[]\l+ total(int[]): int\l+ average(int[]): double\l+ overtimeDays(int[]): int\l+ weeklyOvertime(int[]): int\l+ addFormattedTimesheet(int[]): String\l- validateHours(int[]): void\l}"];
+b [label="{SelfCheck||+ main(String[]): void\l- runUnitChecks(): void\l- runDataDriven(Path): void\l- runInteractive(): void\l}", fillcolor="#E2F0D9", color="#548235"];
+b -> a [label="вызывает", arrowhead=vee];
+}

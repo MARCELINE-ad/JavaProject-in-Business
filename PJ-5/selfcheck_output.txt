@@ -1,0 +1,43 @@
+PASS parseHours: корректная строка
+PASS parseHours: пустая строка
+PASS parseHours: значение 17
+PASS parseHours: не число
+PASS parseHours: четыре значения
+PASS parseHours: trailing-разделитель
+PASS parseHours: ведущий ноль варианта 9
+PASS total: типовой
+PASS total: нижняя граница
+PASS total: верхняя граница
+PASS average: типовой
+PASS average: целое
+PASS average: дробное
+PASS overtimeDays: нет переработки
+PASS overtimeDays: два дня
+PASS overtimeDays: граница 8
+PASS weeklyOvertime: сумма 40
+PASS weeklyOvertime: сумма 50
+PASS weeklyOvertime: сумма меньше 40
+PASS вариант 9A: несколько ведущих нулей
+PASS вариант 9A: только нули и цифры
+PASS вариант 9Б: формат типового табеля
+PASS вариант 9Б: формат нулевой недели
+PASS защитное условие: null
+PASS защитное условие: длина массива
+Unit-проверки: 25/25 passed
+PASS data/1: базовая корректная строка
+PASS data/2: два дня с переработкой
+PASS data/3: все дни переработки
+PASS data/4: нижняя граница
+PASS data/5: верхняя граница
+PASS data/6: пустая строка
+PASS data/7: четыре значения
+PASS data/8: значение вне диапазона
+PASS data/9: не число
+PASS data/10: дробное значение
+PASS data/11: вариант 9: ведущий ноль
+PASS data/12: вариант 9: несколько ведущих нулей
+PASS data/13: вариант 9: форматирование
+PASS data/14: вариант 9: нулевая неделя
+PASS data/15: вариант 9: знак всё ещё запрещён
+Data-driven: 15/15 passed
+Интерактивный режим: добавьте аргумент --interactive
